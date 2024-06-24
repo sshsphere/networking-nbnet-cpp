@@ -5,7 +5,7 @@ if (NOT raygui_FOUND)
     FetchContent_Declare(
         raygui
         GIT_REPOSITORY https://github.com/raysan5/raygui.git
-        GIT_TAG master
+        GIT_TAG 4.0
     )
     FetchContent_MakeAvailable(raygui)
 endif()
