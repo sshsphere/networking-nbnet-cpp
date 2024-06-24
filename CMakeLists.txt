@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
 project(networking-nbnet VERSION 0.1.0)
-set(OPENSSL_ROOT_DIR "D:\\dev\\openssl")
-option(BUILD_CLIENT "Build the client target" OFF)
-option(BUILD_SERVER "Build the server target" ON)
-option(USE_WEBRTC_DRIVER "Build the server with WebRTC C driver, which allows for both native and web clients to connect to the same server (linux only)" ON)
+set(OPENSSL_ROOT_DIR "D:\\dev\\openssl") # https://www.firedaemon.com/download-firedaemon-openssl
+option(BUILD_CLIENT "Build the client target" ON)
+option(BUILD_SERVER "Build the server target" OFF)
+option(USE_WEBRTC_DRIVER "Build the server with WebRTC C driver, which allows for both native and web clients to connect to the same server (linux only)" OFF)
 option(EMSCRIPTEN "Build for web" OFF)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include(CTest)
